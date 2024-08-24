@@ -225,3 +225,9 @@ footer a:focus {
   outline: 2px solid var(--color-green);
   color: var(--color-green);
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 20rem;
+    }
+}
