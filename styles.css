@@ -208,13 +208,6 @@ body {
   outline: 2px solid var(--color-green);
 }
 
-.links-container ul li a {
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 footer {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.875rem;
