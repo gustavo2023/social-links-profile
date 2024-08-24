@@ -1,4 +1,3 @@
-
 /* Box sizing rules */
 *,
 *::before,
@@ -7,7 +6,7 @@
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /* Prevent font size inflation */
@@ -18,14 +17,22 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -36,14 +43,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -61,8 +75,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -80,128 +96,139 @@ textarea:not([rows]) {
 /* Custom styles */
 
 :root {
-    --color-green: #c5f82a;
-    --color-gray700: #333333;
-    --color-gray800: #1f1f1f;
-    --color-gray900: #141414;
+  --color-green: #c5f82a;
+  --color-gray700: #333333;
+  --color-gray800: #1f1f1f;
+  --color-gray900: #141414;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--color-gray900);
-    font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-gray900);
+  font-family: "Inter", sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--color-gray800);
-    width: 22rem;
-    padding: 2.5rem;
-    border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-gray800);
+  width: 22rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
 }
 
 .profile-img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    margin-bottom: 1.6rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
 }
 
 .name {
-    color: #fff;
-    font-size: 1.9rem;
-    font-weight: 400;
-    margin-bottom: 0.8rem;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
 }
 
 .location {
-    color: var(--color-green);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  color: var(--color-green);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .description {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin-bottom: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
 }
 
 .links-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .links-container ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 0;
-    width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0;
+  width: 100%;
 }
 
 .links-container ul li {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.7rem;
-    width: 100%;
-    background-color: var(--color-gray700);
-    border-radius: 0.5rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem;
+  width: 100%;
+  background-color: var(--color-gray700);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.links-container ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
 }
 
 .links-container ul li:hover {
-    background-color: var(--color-green);
-    color: var(--color-gray900);
+  background-color: var(--color-green);
+  color: var(--color-gray900);
 }
 
 .links-container ul li:hover a {
-    color: var(--color-gray900); /* Change the color of <a> elements */
+  color: var(--color-gray900);
 }
 
 /* Focus state for links */
 .links-container ul li a:focus {
-    outline: 2px solid var(--color-green); /* Add an outline to indicate focus */
+  outline: 2px solid var(--color-green);
 }
 
 .links-container ul li a {
-    color: #fff;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-decoration: none;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 footer {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin-top: 1.6rem;
-    text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+  text-align: center;
 }
 
 footer a:hover {
-    color: var(--color-green);
-    text-decoration: none;
+  color: var(--color-green);
+  text-decoration: none;
 }
 
-/* Focus state for footer links */
 footer a:focus {
-    outline: 2px solid var(--color-green); /* Add an outline to indicate focus */
-    color: var(--color-green);
+  outline: 2px solid var(--color-green);
+  color: var(--color-green);
 }
-
