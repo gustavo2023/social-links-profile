@@ -117,7 +117,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: var(--color-gray800);
-  width: 23rem;
+  max-width: 23rem;
   padding: 2.5rem;
   border-radius: 0.7rem;
 }
@@ -228,6 +228,6 @@ footer a:focus {
 
 @media (max-width: 480px) {
     .container {
-        width: 20rem;
+        max-width: 20rem;
     }
 }
