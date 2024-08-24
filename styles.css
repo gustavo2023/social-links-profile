@@ -119,7 +119,7 @@ body {
   background-color: var(--color-gray800);
   width: 23rem;
   padding: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 .profile-img {
