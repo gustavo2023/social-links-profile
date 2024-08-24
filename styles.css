@@ -170,15 +170,13 @@ body {
     color: var(--color-gray900);
 }
 
-/* Focus state for <li> elements */
-.links-container ul li:focus {
-    outline: 2px solid var(--color-green); /* Add an outline to indicate focus */
-    background-color: var(--color-green);
-    color: var(--color-gray900);
-}
-
 .links-container ul li:hover a {
     color: var(--color-gray900); /* Change the color of <a> elements */
+}
+
+/* Focus state for links */
+.links-container ul li a:focus {
+    outline: 2px solid var(--color-green); /* Add an outline to indicate focus */
 }
 
 .links-container ul li a {
