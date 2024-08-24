@@ -101,8 +101,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: var(--color-gray800);
-    width: 21rem;
-    padding: 2rem;
+    width: 22rem;
+    padding: 2.5rem;
     border-radius: 1rem;
 }
 
@@ -170,10 +170,22 @@ body {
     color: var(--color-gray900);
 }
 
+.links-container ul li:hover a {
+    color: var(--color-gray900); /* Change the color of <a> elements */
+}
+
 .links-container ul li a {
     color: #fff;
     font-size: 0.875rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+    text-align: center;
 }
 
